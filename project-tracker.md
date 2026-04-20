@@ -21,13 +21,15 @@ Launch website with 5 core pages by [INSERT DATE]
 
 ## 🚧 IN PROGRESS
 
-### Day 2: Theme & Configuration (Next Session)
-- [ ] Install PaperMod theme
-- [ ] Configure `hugo.toml` with brand colors (Forest Green + Gold)
-- [ ] Set up basic site structure
-- [ ] Create first test article
-- [ ] Deploy to GitHub Pages
-
+### Day 2: Theme & Deployment (April 20, 2026) ✅ COMPLETE
+- [x] PaperMod theme installed via Git submodule
+- [x] Brand colors configured (Forest Green #228B22 + Gold #D4AF37)
+- [x] Navigation menu created
+- [x] First test article published
+- [x] GitHub Actions workflow configured (Hugo 0.160.1)
+- [x] Repository renamed to CogitoCommunity.github.io
+- [x] Website deployed to https://cogitocommunity.github.io/
+- [x] Quick Reference Guide created (saved in Obsidian)
 ---
 
 ## 📌 UPCOMING TASKS
