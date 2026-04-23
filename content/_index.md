@@ -19,16 +19,24 @@ We believe in applied knowledge, student-led research, and cross-pollination of 
 
 ## Latest Articles
 
-{{< recent-posts >}}
+Visit our [Articles](/articles/) page to read all published work, or check out specific club content:
+
+- [Biology Club Articles](/clubs/biology-club/)
+- [Philosophy Club Articles](/clubs/philosophy-club/)  
+- [Public Speaking Club Articles](/clubs/public-speaking-club/)
 
 ---
 
-## Join Our Community
+{{< newsletter >}}
 
-**Newsletter:** Get weekly updates on new articles and club activities.
+---
 
-[**Subscribe Here**](#newsletter)
+## Contribute Your Ideas
 
-**Submit Your Work:** Have an idea? We want to hear from you.
+Have a topic you're passionate about? We want to hear from you.
 
-[**Submit Article**](/submit/)
+**[Submit Your Article →](/submit/)** 
+
+---
+
+{{< translate >}}

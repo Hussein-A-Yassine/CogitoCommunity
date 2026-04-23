@@ -1,34 +1,81 @@
 ---
-title: "CogitoCommunity"
-description: "Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking"
+title: "Our Clubs"
+description: "Explore our student-led clubs: Biology, Philosophy, and Public Speaking"
 ---
 
-# Active Creation > Passive Consumption
+{{< translate >}}
 
-Welcome to **CogitoCommunity** — a student-led publication that prioritizes critique-based thinking over memorization.
+# Student Clubs
 
-## Our Mission
-
-We believe in applied knowledge, student-led research, and cross-pollination of ideas. Every article published here represents original student thinking, not regurgitated facts.
-
-## Featured Topics
-
-- **Biology:** Neuroscience, Pharmacology, Epidemiology
-- **Philosophy:** Ethics, Logic, Critical Thinking
-- **Public Speaking:** Rhetoric, Debate, Communication Skills
-
-## Latest Articles
-
-{{< recent-posts >}}
+Each club operates independently, producing original research, articles, and discussions in their field.
 
 ---
 
-## Join Our Community
+## 🧬 Biology Club
 
-**Newsletter:** Get weekly updates on new articles and club activities.
+**Focus Areas:**
+- Neuroscience & Cognitive Science
+- Anatomy & Physiology
+- Pharmacology & Drug Development
+- Epidemiology & Public Health
 
-[**Subscribe Here**](#newsletter)
+**What We Do:**
+- Original research summaries
+- Health science explainers
+- Medical ethics discussions
+- Student experiments and findings
 
-**Submit Your Work:** Have an idea? We want to hear from you.
+**Join:** Submit a biology article or topic proposal via our [submission form](/submit/).
 
-[**Submit Article**](/submit/)
+---
+
+## 🤔 Philosophy Club
+
+**Focus Areas:**
+- Logic & Critical Thinking
+- Ethics & Moral Philosophy
+- Epistemology (Theory of Knowledge)
+- Applied Philosophy to Real-World Issues
+
+**What We Do:**
+- Thought experiments
+- Ethical case studies
+- Logical fallacy breakdowns
+- Philosophical frameworks explained
+
+**Join:** Submit a philosophy article or discussion topic via our [submission form](/submit/).
+
+---
+
+## 🎤 Public Speaking Club
+
+**Focus Areas:**
+- Rhetoric & Persuasion
+- Debate Techniques
+- Communication Skills
+- Presentation & Body Language
+
+**What We Do:**
+- Speech analysis
+- Debate breakdowns
+- Persuasion technique guides
+- Communication skill-building
+
+**Join:** Submit an article on communication or propose a debate topic via our [submission form](/submit/).
+
+---
+
+## 💡 Joining a Club
+
+**Interested in contributing?**
+
+1. Choose your club (or clubs!)
+2. Read our [submission guidelines](/submit/)
+3. Submit your first article
+4. Join our newsletter for club updates
+
+**All skill levels welcome.** We value original thinking over prior expertise.
+
+---
+
+{{< newsletter >}}

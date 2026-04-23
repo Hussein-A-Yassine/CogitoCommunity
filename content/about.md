@@ -3,6 +3,8 @@ title: "About CogitoCommunity"
 description: "Our mission, values, and the team behind the student publication"
 ---
 
+{{<translate>}}
+
 # About CogitoCommunity
 
 ## Our Philosophy
@@ -33,10 +35,9 @@ Rhetoric, Debate, Persuasion — mastering the art of effective communication an
 
 ## The Team
 
-**Co-Founders:** [Names]  
-**Core Contributors:** 8 student writers, editors, and researchers
+**Co-Founders:** Hussein Yassine & Maria Ghtaimi
+**Core Contributors:** to be announced
 
-**Faculty Advisors:** [If applicable]
 
 ## Content Policy
 
@@ -44,7 +45,7 @@ We cover **global and theoretical topics** across all subjects. We do **not** pu
 
 ## Contact
 
-**Email:** contact@cogitocommunity.com *(update with real email)*  
+**Email:** communitycogito@gmail.com *(might change)*  
 **Submit Article:** [Submission Form](/submit/)  
 **Newsletter:** [Subscribe](#newsletter)
 

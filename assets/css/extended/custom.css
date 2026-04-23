@@ -67,3 +67,94 @@ blockquote {
 .highlight {
     border-left: 3px solid var(--forest-green);
 }
+
+/* Newsletter Signup Styling */
+.newsletter-signup {
+    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin: 3rem 0;
+    border-left: 6px solid var(--gold);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.newsletter-signup input[type="email"] {
+    padding: 0.875rem 1rem;
+    border: 2px solid var(--forest-green);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.newsletter-signup input[type="email"]:focus {
+    outline: none;
+    border-color: var(--dark-green);
+    box-shadow: 0 0 0 3px rgba(34, 139, 34, 0.1);
+}
+
+.newsletter-signup button {
+    padding: 0.875rem 2rem;
+    background: var(--forest-green);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.newsletter-signup button:hover {
+    background: var(--dark-green);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Google Translate Styling */
+#google_translate_element {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: 2px solid var(--forest-green);
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+#google_translate_element select {
+    background: white;
+    border: none;
+    color: var(--forest-green);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+/* Form Placeholder Styling */
+.form-placeholder {
+    background: #f0f0f0;
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px dashed var(--forest-green);
+    margin: 2rem 0;
+}
+
+/* Responsive Newsletter Form */
+@media screen and (max-width: 768px) {
+    .newsletter-signup {
+        padding: 1.5rem;
+    }
+    
+    .newsletter-signup form {
+        flex-direction: column;
+    }
+    
+    .newsletter-signup input[type="email"],
+    .newsletter-signup button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
