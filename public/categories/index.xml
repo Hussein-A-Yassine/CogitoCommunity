@@ -6,8 +6,15 @@
     <description>Recent content in Categories on CogitoCommunity</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biology</title>
+      <link>http://localhost:1313/categories/biology/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/biology/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Philosophy</title>
       <link>http://localhost:1313/categories/philosophy/</link>

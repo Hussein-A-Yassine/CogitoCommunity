@@ -16,7 +16,7 @@ We're always looking for original student perspectives. Here's how to contribute
 - **Topic:** Must fit Biology, Philosophy, Public Speaking themes or other clubs you want to suggest
 
 ### Format
-- Use our [article template](article-template.md) 
+- Use our [article template](/article-template/) 
 - Include citations in APA format
 - Add 2-5 relevant tags
 - Choose appropriate category and club
@@ -41,15 +41,7 @@ Average time from submission to publication: **7-10 days**
 {{<translate>}}
 
 
-**Current Placeholder (Replace with your form):**
-
-<div style="background: #f0f0f0; padding: 3rem; border-radius: 8px; text-align: center; border: 2px dashed #228B22;">
-  <h3 style="color: #228B22; margin-bottom: 1rem;">🔧https://forms.gle/dvsE8Cz8QTsfprP17 </h3>
-  <p style="color: #666; margin-bottom: 1.5rem;">https://forms.gle/dvsE8Cz8QTsfprP17.</p>
-  <p style="font-size: 0.9rem; color: #888;">
-    <strong>Instructions:</strong> Edit <code>content/submit.md</code> https://forms.gle/dvsE8Cz8QTsfprP17
-  </p>
-</div>
+Submit your form [here.](https://forms.gle/dvsE8Cz8QTsfprP17)
 
 ---
 

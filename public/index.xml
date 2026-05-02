@@ -6,14 +6,14 @@
     <description>Recent content on CogitoCommunity</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 11:15:30 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test Article2</title>
-      <link>http://localhost:1313/articles/test-article2/</link>
-      <pubDate>Wed, 22 Apr 2026 11:15:30 +0300</pubDate>
-      <guid>http://localhost:1313/articles/test-article2/</guid>
-      <description></description>
+      <title>Your Article Title Here</title>
+      <link>http://localhost:1313/article-template/</link>
+      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/article-template/</guid>
+      <description>A short 1-2 sentence summary for SEO and social media sharing</description>
     </item>
     <item>
       <title>Welcome to CogitoCommunity</title>
@@ -28,6 +28,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>Our mission, values, and the team behind the student publication</description>
+    </item>
+    <item>
+      <title>Submit Your Work</title>
+      <link>http://localhost:1313/submit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/submit/</guid>
+      <description>Submission guidelines and form for CogitoCommunity articles</description>
     </item>
   </channel>
 </rss>

@@ -1,11 +1,11 @@
 ---
-title: "Your Article Title Here"
-date: 2026-04-23
-draft: false
-categories: ["Biology"]  # Pick ONE: Biology, Philosophy, Public Speaking
-clubs: ["Biology Club"]  # Match your category
-tags: ["tag1", "tag2", "tag3"]  # 2-5 relevant tags
-author: "Your Name"
+title: "Your Article Title Here" 
+date: "2026-04-23" 
+draft: false 
+categories: ["Biology"]   # Pick ONE: Biology, Philosophy, Public Speaking
+clubs: ["Biology Club"]   # Match your category
+tags: ["tag1", "tag2", "tag3"]   # 2-5 relevant tags
+author: "Your Name" 
 description: "A short 1-2 sentence summary for SEO and social media sharing"
 ---
 

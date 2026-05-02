@@ -32,7 +32,7 @@ theme = 'PaperMod'
   ShowPostNavLinks = true
   
   # Enable search
-  ShowShareButtons = false  # Disable for now, can enable later
+  ShowShareButtons = true  # Disable for now, can enable later
 
 # Main Menu (top navigation)
 [[menu.main]]
