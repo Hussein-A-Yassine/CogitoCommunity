@@ -2,6 +2,7 @@ baseURL = 'https://cogitocommunity.github.io/'
 languageCode = 'en-us'
 title = 'CogitoCommunity'
 theme = 'PaperMod'
+googleAnalytics = "G-299ZRXC3F2"
 
 [params]
   sticky = true
@@ -19,10 +20,8 @@ theme = 'PaperMod'
     name = "Submit Article"
     url = "/submit/"
     
-  [params.assets]
-    favicon = "favicon.ico"
 
-  googleAnalytics = "G-299ZRXC3F2"
+
 
   # Show article reading time
   ShowReadingTime = true
