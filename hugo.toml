@@ -4,21 +4,25 @@ title = 'CogitoCommunity'
 theme = 'PaperMod'
 
 [params]
-  # Brand Identity
-  description = "Bilingual student publication fostering intellectual discourse"
-  author = "CogitoCommunity Team"
-  
-  # Visual Identity - Forest Green & Gold
-  defaultTheme = "light"
-  
+  sticky = true
   # Homepage Settings
   [params.profileMode]
     enabled = false
-  [params.homeInfoParams]
-    Title = "CogitoCommunity"
-    Content = "Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking"
   
 
+  title = "CogitoCommunity"
+  subtitle = "Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking"
+
+  [[params.profileMode.buttons]]
+    name = "Read Articles"
+    url = "/articles/"
+
+  [[params.profileMode.buttons]]
+    name = "Submit Article"
+    url = "/submit/"
+    
+  [params.assets]
+    favicon = "favicon.ico"
 
   # Show article reading time
   ShowReadingTime = true
@@ -34,6 +38,7 @@ theme = 'PaperMod'
   
   # Enable search
   ShowShareButtons = true  # Disable for now, can enable later
+
 
 # Main Menu (top navigation)
 [[menu.main]]

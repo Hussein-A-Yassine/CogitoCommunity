@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="light">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head>
 	<meta name="generator" content="Hugo 0.160.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
@@ -9,7 +9,7 @@
 <title>CogitoCommunity</title>
 
 <meta name="description" content="Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking">
-<meta name="author" content="CogitoCommunity Team">
+<meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.f2b59cb10a52f34386e0917cd9571f1e76ff1a0539a79953092e6090ac1f8394.css" integrity="sha256-8rWcsQpS80OG4JF82VcfHnb/GgU5p5lTCS5gkKwfg5Q=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -30,10 +30,41 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
@@ -96,23 +127,15 @@
     </nav>
 </header>
 <main class="main"> 
-<div class="md-content"><h1 id="active-creation--passive-consumption">Active Creation &gt; Passive Consumption<a hidden class="anchor" aria-hidden="true" href="#active-creation--passive-consumption">#</a></h1>
+<div class="md-content"><h2 id="active-creation--passive-consumption">Active Creation &gt; Passive Consumption<a hidden class="anchor" aria-hidden="true" href="#active-creation--passive-consumption">#</a></h2>
 <p>Welcome to <strong>CogitoCommunity</strong> — a student-led publication that prioritizes critique-based thinking over memorization.</p>
 <h2 id="our-mission">Our Mission<a hidden class="anchor" aria-hidden="true" href="#our-mission">#</a></h2>
 <p>We believe in applied knowledge, student-led research, and cross-pollination of ideas. Every article published here represents original student thinking, not regurgitated facts.</p>
-<h2 id="featured-topics">Featured Topics<a hidden class="anchor" aria-hidden="true" href="#featured-topics">#</a></h2>
-<ul>
-<li><strong>Biology:</strong> Neuroscience, Pharmacology, Epidemiology</li>
-<li><strong>Philosophy:</strong> Ethics, Logic, Critical Thinking</li>
-<li><strong>Public Speaking:</strong> Rhetoric, Debate, Communication Skills</li>
-</ul>
-<h2 id="latest-articles">Latest Articles<a hidden class="anchor" aria-hidden="true" href="#latest-articles">#</a></h2>
-<p>Visit our <a href="/articles/">Articles</a> page to read all published work, or check out specific club content:</p>
-<ul>
-<li><a href="/clubs/biology-club/">Biology Club Articles</a></li>
-<li><a href="/clubs/philosophy-club/">Philosophy Club Articles</a></li>
-<li><a href="/clubs/public-speaking-club/">Public Speaking Club Articles</a></li>
-</ul>
+<h3 id="featured-topics">Featured Topics<a hidden class="anchor" aria-hidden="true" href="#featured-topics">#</a></h3>
+<p>topic 1
+topic 2
+topic 3</p>
+<p>check out more on the <a href="/articles/">articles</a> page</p>
 <hr>
 <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1776073");</style>
     <style type="text/css">
@@ -1056,23 +1079,8 @@ body {
 
 
 </div>
-<article class="first-entry home-info">
-    <header class="entry-header">
-        <h1>CogitoCommunity</h1>
-    </header>
-    <div class="entry-content md-content">
-        
-        <p>Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking</p>
 
-    </div>
-    <footer class="entry-footer">
-        <div class="social-icons" >
-</div>
-
-    </footer>
-</article>
-
-<article class="post-entry"> 
+<article class="first-entry"> 
   <header class="entry-header">
     <h2 class="entry-hint-parent">Welcome to CogitoCommunity
     </h2>
@@ -1083,7 +1091,7 @@ Our Mission We believe in:
 Applied Knowledge: Learning through creation, not consumption Student-Led Research: Ownership of intellectual pursuits Cross-Pollination: Biology meets Philosophy meets Public Speaking What We Cover Biology: Anatomy, Cognitive Science, Pharmacology Philosophy: Logic, theory defense, ethical frameworks Public Speaking: Anxiety management, debate, improvisation And much more… Join Us This is just the beginning. Stay tuned for:
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2026-04-19 00:00:00 +0000 UTC'>April 19, 2026</span>&nbsp;·&nbsp;<span>Editorial Team</span></footer>
+  <footer class="entry-footer"><span title='2026-04-19 00:00:00 +0000 UTC'>April 19, 2026</span></footer>
   <a class="entry-link" aria-label="post link to Welcome to CogitoCommunity" href="http://localhost:1313/articles/test-article/"></a>
 </article>
     </main>

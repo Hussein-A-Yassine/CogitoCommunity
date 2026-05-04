@@ -5,7 +5,6 @@ draft: false
 categories: ["Philosophy"]
 clubs: ["Philosophy Club"]
 tags: ["announcement", "student-led"]
-author: "Editorial Team"
 description: "Launching a new era of student intellectual discourse"
 ---
 

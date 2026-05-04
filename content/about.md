@@ -47,7 +47,7 @@ We cover **global and theoretical topics** across all subjects. We do **not** pu
 
 **Email:** communitycogito@gmail.com *(might change)*  
 **Submit Article:** [Submission Form](/submit/)  
-**Newsletter:** [Subscribe](/layouts/shortcodes/newsletter.html)
+**Newsletter:** {{<newsletter>}}
 
 ---
 

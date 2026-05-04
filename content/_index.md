@@ -1,9 +1,10 @@
 ---
 title: "CogitoCommunity"
 description: "Bilingual student publication fostering intellectual discourse through Biology, Philosophy, and Public Speaking"
+layout: "home"
 ---
 
-# Active Creation > Passive Consumption
+## Active Creation > Passive Consumption
 
 Welcome to **CogitoCommunity** — a student-led publication that prioritizes critique-based thinking over memorization.
 
@@ -11,19 +12,14 @@ Welcome to **CogitoCommunity** — a student-led publication that prioritizes cr
 
 We believe in applied knowledge, student-led research, and cross-pollination of ideas. Every article published here represents original student thinking, not regurgitated facts.
 
-## Featured Topics
+### Featured Topics
+topic 1
+topic 2
+topic 3
 
-- **Biology:** Neuroscience, Pharmacology, Epidemiology
-- **Philosophy:** Ethics, Logic, Critical Thinking
-- **Public Speaking:** Rhetoric, Debate, Communication Skills
+check out more on the [articles](/articles/) page
 
-## Latest Articles
 
-Visit our [Articles](/articles/) page to read all published work, or check out specific club content:
-
-- [Biology Club Articles](/clubs/biology-club/)
-- [Philosophy Club Articles](/clubs/philosophy-club/)  
-- [Public Speaking Club Articles](/clubs/public-speaking-club/)
 
 ---
 
