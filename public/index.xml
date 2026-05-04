@@ -23,11 +23,25 @@
       <description>Our mission, values, and the team behind the student publication</description>
     </item>
     <item>
+      <title>bio article test</title>
+      <link>http://localhost:1313/articles/biotest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/biotest/</guid>
+      <description>bio article test</description>
+    </item>
+    <item>
       <title>COGITOCOMMUNITY ARTICLE TEMPLATE</title>
       <link>http://localhost:1313/article-template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/article-template/</guid>
       <description>This template ensures your article is clear, rigorous, and publish-ready. Follow the structure below, but remember: clarity and critical thinking matter more than rigid formatting.</description>
+    </item>
+    <item>
+      <title>publicspeaking test</title>
+      <link>http://localhost:1313/articles/publicspeaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/publicspeaking/</guid>
+      <description>publicspeaking test</description>
     </item>
     <item>
       <title>Submit Your Work</title>

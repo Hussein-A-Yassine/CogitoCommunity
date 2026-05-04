@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/clubs/philosophy-club/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Biology Club</title>
+      <link>http://localhost:1313/clubs/biology-club/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clubs/biology-club/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public Speaking Club</title>
+      <link>http://localhost:1313/clubs/public-speaking-club/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clubs/public-speaking-club/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

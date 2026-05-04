@@ -26,6 +26,8 @@ Each club operates independently, producing original research, articles, and dis
 - Medical ethics discussions
 - Student experiments and findings
 
+check out more Biology club articles [here](/clubs/biology-club/)
+
 **Join:** Submit a biology article or topic proposal via our [submission form](/submit/).
 
 ---
@@ -44,6 +46,8 @@ Each club operates independently, producing original research, articles, and dis
 - Logical fallacy breakdowns
 - Philosophical frameworks explained
 
+check out more Philosophy club articles [here](/clubs/philosophy-club/)
+
 **Join:** Submit a philosophy article or discussion topic via our [submission form](/submit/).
 
 ---
@@ -61,6 +65,8 @@ Each club operates independently, producing original research, articles, and dis
 - Debate breakdowns
 - Persuasion technique guides
 - Communication skill-building
+
+check out more Public Speaking club articles [here](/clubs/public-speaking-club/)
 
 **Join:** Submit an article on communication or propose a debate topic via our [submission form](/submit/).
 

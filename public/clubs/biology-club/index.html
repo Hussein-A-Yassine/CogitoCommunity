@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto" data-theme="light">
+<html lang="en" dir="auto" data-theme="auto">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,10 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Biology Club | CogitoCommunity</title>
 <meta name="keywords" content="">
-<meta name="description" content="Bilingual student publication fostering intellectual discourse">
-<meta name="author" content="CogitoCommunity Team">
+<meta name="description" content="">
+<meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/clubs/biology-club/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f2b59cb10a52f34386e0917cd9571f1e76ff1a0539a79953092e6090ac1f8394.css" integrity="sha256-8rWcsQpS80OG4JF82VcfHnb/GgU5p5lTCS5gkKwfg5Q=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7d1e066fbcda362aafb441a28a8cc368641c28050ba2275b2c45cf2dc41c93c9.css" integrity="sha256-fR4Gb7zaNiqvtEGiiozDaGQcKAULoidbLEXPLcQck8k=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -28,10 +28,41 @@
         }
 
     </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
 </noscript>
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
     }
 
 </script>
@@ -94,17 +125,24 @@
     </nav>
 </header>
 <main class="main"> 
-<header class="page-header"><nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
-    <a href='http://localhost:1313/'>Home</a>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-            <a href="http://localhost:1313/clubs/">Clubs</a></nav>
+<header class="page-header">
   <h1>
     Biology Club
   </h1>
 </header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">bio article test
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>hello
+</p>
+  </div>
+  <footer class="entry-footer"></footer>
+  <a class="entry-link" aria-label="post link to bio article test" href="http://localhost:1313/articles/biotest/"></a>
+</article>
     </main>
     
 <footer class="footer">

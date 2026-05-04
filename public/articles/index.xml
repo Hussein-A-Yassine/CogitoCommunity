@@ -15,5 +15,19 @@
       <guid>http://localhost:1313/articles/test-article/</guid>
       <description>Launching a new era of student intellectual discourse</description>
     </item>
+    <item>
+      <title>bio article test</title>
+      <link>http://localhost:1313/articles/biotest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/biotest/</guid>
+      <description>bio article test</description>
+    </item>
+    <item>
+      <title>publicspeaking test</title>
+      <link>http://localhost:1313/articles/publicspeaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/publicspeaking/</guid>
+      <description>publicspeaking test</description>
+    </item>
   </channel>
 </rss>
