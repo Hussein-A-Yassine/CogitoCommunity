@@ -1,177 +1,747 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap');
+/* ============================================================
+   COGITOCOMMUNITY CUSTOM STYLES
+   Version: 2.0
+   Last Updated: May 2026
+   ============================================================ */
 
-body { font-family: 'Inter', sans-serif; }
-h1, h2, h3 { font-family: 'Playfair Display', serif; }
+/* ============================================================
+   # TYPOGRAPHY IMPORTS
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
 
-/* CogitoCommunity Brand Colors */
+/* ============================================================
+   # CSS VARIABLES - COLOR SYSTEM
+   ============================================================ */
 :root {
-  /* Primary */
-  --primary-green: #1B5E20;      /* Main actions, headers */
-  --primary-green-dark: #144716;  /* Hover states */
-  --primary-green-light: #2E7D32; /* Accents */
+  /* Primary Colors */
+  --primary-green: #1B5E20;
+  --primary-green-dark: #144716;
+  --primary-green-light: #2E7D32;
   
-  /* Accent */
-  --gold: #C9972B;               /* CTAs, highlights */
-  --gold-dark: #B8862A;          /* Hover */
-  --gold-light: #D4A842;         /* Subtle accents */
+  /* Accent Colors */
+  --gold: #C9972B;
+  --gold-dark: #B8862A;
+  --gold-light: #D4A842;
   
-  /* Neutrals */
-  --background: #FAFAF8;         /* Page background */
-  --surface: #FFFFFF;            /* Cards, elevated elements */
-  --text-primary: #1A1A1A;       /* Body text */
-  --text-secondary: #4A4A4A;     /* Meta info */
-  --border: #E0E0E0;             /* Dividers */
+  /* Neutral Colors */
+  --background: #FAFAF8;
+  --surface: #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-tertiary: #6B6B6B;
+  --border: #E0E0E0;
+  --border-light: #F0F0F0;
+  
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
 }
 
-/* Header/Navigation - Forest Green */
+/* ============================================================
+   # BASE TYPOGRAPHY
+   ============================================================ */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--primary-green-dark);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+::selection {
+  background-color: rgba(201, 151, 43, 0.2); /* Soft transparent gold */
+  color: var(--text-primary);
+}
+/* ============================================================
+   # HEADER & NAVIGATION
+   ============================================================ */
 .top-link,
 .nav a {
-    color: var(--forest-green) !important;
+  color: var(--primary-green) !important;
+  font-weight: 500;
+  transition: color var(--transition-base);
 }
 
 .nav a:hover {
-    color: var(--dark-green) !important;
+  color: var(--gold) !important;
 }
 
-/* Links - Forest Green */
+.nav a {
+  position: relative;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+/* Active navigation state */
+.nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--gold);
+}
+
+.logo a {
+  font-weight: 700;
+  color: var(--primary-green) !important;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* ============================================================
+   # LINKS
+   ============================================================ */
+a {
+  color: var(--primary-green);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+a:hover {
+  color: var(--gold);
+}
+
 .post-content a,
 .entry-content a {
-    color: var(--forest-green);
-    text-decoration: none;
-    border-bottom: 1px solid var(--forest-green);
+  color: var(--primary-green);
+  border-bottom: 1px solid var(--primary-green-light);
+  transition: all var(--transition-base);
 }
 
 .post-content a:hover,
 .entry-content a:hover {
-    color: var(--dark-green);
-    border-bottom-color: var(--dark-green);
+  color: var(--gold);
+  border-bottom-color: var(--gold);
 }
 
-/* Buttons/Call-to-action - Gold accents */
+/* ============================================================
+   # ARTICLE CARDS (List View)
+   ============================================================ */
+.post-entry {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-entry:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--primary-green-light);
+}
+
+.post-entry-header {
+  margin-bottom: var(--space-sm);
+}
+
+.entry-header h2 {
+  margin-top: 0;
+  margin-bottom: var(--space-xs);
+}
+
+
+/* ============================================================
+   # CLUB BADGES
+   ============================================================ */
+.post-meta .club-badge,
+.clubs-list .club-badge {
+  display: inline-block;
+  background: var(--primary-green);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: var(--space-xs);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: background var(--transition-base);
+}
+
+.club-badge:hover {
+  background: var(--gold);
+}
+
+/* Club-specific badge colors (optional) */
+.club-badge.biology {
+  background: #2E7D32;
+}
+
+.club-badge.philosophy {
+  background: #5D4037;
+}
+
+.club-badge.public-speaking {
+  background: #1565C0;
+}
+
+/* ============================================================
+   # ARTICLE SINGLE PAGE
+   ============================================================ */
+.post-single {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.post-single .post-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--border-light);
+}
+
 .post-single .post-title {
-    color: var(--dark-green);
+  color: var(--primary-green-dark);
+  margin-bottom: var(--space-sm);
 }
 
-/* Category/Tag badges - Gold */
-.post-tags a {
-    background: var(--gold);
-    color: #000;
+.post-single .post-content {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.8;
 }
 
-.post-tags a:hover {
-    background: var(--forest-green);
-    color: #fff;
+.post-single .post-content p {
+  margin-bottom: var(--space-md);
 }
 
-/* Archive page date accent */
-.archive-month {
-    color: var(--forest-green);
-}
-
-/* Logo styling - if you add one later */
-.logo a {
-    font-weight: 700;
-    color: var(--forest-green) !important;
-    font-size: 24px;
-}
-
-/* Blockquote accent */
+/* ============================================================
+   # BLOCKQUOTES & CODE
+   ============================================================ */
 blockquote {
-    border-left: 4px solid var(--gold);
+  border-left: 4px solid var(--gold);
+  background: var(--background);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-md) 0;
+  font-style: italic;
+  color: var(--text-secondary);
+  border-radius: 0 4px 4px 0;
 }
 
-/* Code block accent */
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 .highlight {
-    border-left: 3px solid var(--forest-green);
+  border-left: 3px solid var(--primary-green);
+  border-radius: 4px;
+  margin: var(--space-md) 0;
 }
 
-/* Newsletter Signup Styling */
-.newsletter-signup {
-    background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
-    padding: 2.5rem;
-    border-radius: 12px;
-    margin: 3rem 0;
-    border-left: 6px solid var(--gold);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+code {
+  background: var(--background);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: var(--primary-green-dark);
 }
 
-.newsletter-signup input[type="email"] {
-    padding: 0.875rem 1rem;
-    border: 2px solid var(--forest-green);
-    border-radius: 6px;
-    width: 100%;
-    max-width: 400px;
-    font-size: 1rem;
-    transition: all 0.2s;
+pre code {
+  background: transparent;
+  padding: 0;
 }
 
-.newsletter-signup input[type="email"]:focus {
-    outline: none;
-    border-color: var(--dark-green);
-    box-shadow: 0 0 0 3px rgba(34, 139, 34, 0.1);
+/* ============================================================
+   # TAGS & CATEGORIES
+   ============================================================ */
+.post-tags a,
+.terms-tags a {
+  background: var(--gold-light);
+  color: var(--text-primary);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: var(--space-xs);
+  margin-bottom: var(--space-xs);
+  display: inline-block;
+  transition: all var(--transition-base);
 }
 
-.newsletter-signup button {
-    padding: 0.875rem 2rem;
-    background: var(--forest-green);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1rem;
-    transition: all 0.2s;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.post-tags a:hover,
+.terms-tags a:hover {
+  background: var(--gold);
+  color: white;
+  transform: translateY(-1px);
 }
 
-.newsletter-signup button:hover {
-    background: var(--dark-green);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+/* ============================================================
+   # BUTTONS & CALLS TO ACTION
+   ============================================================ */
+.button,
+button,
+input[type="submit"] {
+  background: var(--primary-green);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+  font-size: 1rem;
 }
 
-/* Google Translate Styling */
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.button.secondary {
+  background: var(--gold);
+}
+
+.button.secondary:hover {
+  background: var(--gold-dark);
+}
+
+/* ============================================================
+   # NEWSLETTER SIGNUP FORM
+   ============================================================ */
+.newsletter-signup,
+#mlb2-40204861 .ml-form-embedWrapper {
+  background: linear-gradient(135deg, var(--surface) 0%, var(--background) 100%);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  margin: var(--space-xl) 0;
+  border-left: 6px solid var(--gold);
+  box-shadow: var(--shadow-md);
+}
+
+.newsletter-signup h4 {
+  color: var(--primary-green-dark);
+  margin-bottom: var(--space-sm);
+}
+
+.newsletter-signup input[type="email"],
+#mlb2-40204861 input[type="email"] {
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--primary-green);
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  background: var(--surface);
+}
+
+.newsletter-signup input[type="email"]:focus,
+#mlb2-40204861 input[type="email"]:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201, 151, 43, 0.1);
+}
+
+.newsletter-signup button,
+#mlb2-40204861 button[type="submit"] {
+  background: var(--primary-green) !important;
+  color: white !important;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.newsletter-signup button:hover,
+#mlb2-40204861 button[type="submit"]:hover {
+  background: var(--gold) !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================================
+   # GOOGLE TRANSLATE WIDGET
+   ============================================================ */
 #google_translate_element {
-    background: white;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    border: 2px solid var(--forest-green);
-    display: inline-block;
-    margin: 1rem 0;
+  background: var(--surface);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: 6px;
+  border: 2px solid var(--primary-green);
+  display: inline-block;
+  margin: var(--space-sm) 0;
+  box-shadow: var(--shadow-sm);
 }
 
 #google_translate_element select {
-    background: white;
-    border: none;
-    color: var(--forest-green);
-    font-weight: 600;
-    cursor: pointer;
-    padding: 0.25rem;
+  background: transparent;
+  border: none;
+  color: var(--primary-green);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.25rem;
 }
 
-/* Form Placeholder Styling */
-.form-placeholder {
-    background: #f0f0f0;
-    padding: 3rem;
-    border-radius: 8px;
-    text-align: center;
-    border: 2px dashed var(--forest-green);
-    margin: 2rem 0;
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
 }
 
-/* Responsive Newsletter Form */
+body {
+  top: 0px !important;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  color: transparent !important;
+}
+
+/* ============================================================
+   # BREADCRUMBS
+   ============================================================ */
+.breadcrumbs {
+  font-size: 0.875rem;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-md);
+}
+
+.breadcrumbs a {
+  color: var(--text-secondary);
+  border-bottom: none;
+}
+
+.breadcrumbs a:hover {
+  color: var(--primary-green);
+}
+
+/* ============================================================
+   # POST NAVIGATION (Previous/Next)
+   ============================================================ */
+.post-nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border);
+}
+
+.post-nav-links a {
+  color: var(--primary-green);
+  font-weight: 500;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all var(--transition-base);
+}
+
+.post-nav-links a:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+/* ============================================================
+   # FOOTER
+   ============================================================ */
+.footer {
+  background: var(--primary-green-dark);
+  color: var(--background);
+  padding: var(--space-lg) 0;
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+.footer a {
+  color: var(--gold-light);
+  border-bottom: 1px solid transparent;
+}
+
+.footer a:hover {
+  color: white;
+  border-bottom-color: white;
+}
+
+/* ============================================================
+   # ARCHIVE PAGE
+   ============================================================ */
+.archive-month {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+.archive-year {
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   # SEARCH
+   ============================================================ */
+#searchResults {
+  margin-top: var(--space-md);
+}
+
+#searchResults .search-result {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+  transition: all var(--transition-base);
+}
+
+#searchResults .search-result:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-green-light);
+}
+
+/* ============================================================
+   # TABLES
+   ============================================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+  background: var(--surface);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th {
+  background: var(--primary-green);
+  color: white;
+  padding: var(--space-sm);
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: var(--space-sm);
+  border-bottom: 1px solid var(--border-light);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background: var(--background);
+}
+
+/* ============================================================
+   # FORMS
+   ============================================================ */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+textarea,
+select {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  background: var(--surface);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(27, 94, 32, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   # RESPONSIVE DESIGN - TABLET
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+  h1 { font-size: 2.25rem; }
+  h2 { font-size: 1.875rem; }
+  h3 { font-size: 1.375rem; }
+  
+  .post-single {
+    padding: var(--space-md);
+  }
+}
+
+/* ============================================================
+   # RESPONSIVE DESIGN - MOBILE
+   ============================================================ */
 @media screen and (max-width: 768px) {
-    .newsletter-signup {
-        padding: 1.5rem;
-    }
-    
-    .newsletter-signup form {
-        flex-direction: column;
-    }
-    
-    .newsletter-signup input[type="email"],
-    .newsletter-signup button {
-        width: 100%;
-        max-width: 100%;
-    }
+  body {
+    font-size: 1rem;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.625rem; }
+  h3 { font-size: 1.25rem; }
+  
+  .post-single {
+    padding: var(--space-sm);
+    border-radius: 0;
+  }
+  
+  .post-single .post-content {
+    font-size: 1rem;
+  }
+  
+  .newsletter-signup,
+  #mlb2-40204861 .ml-form-embedWrapper {
+    padding: var(--space-md);
+  }
+  
+  .newsletter-signup form {
+    flex-direction: column;
+  }
+  
+  .newsletter-signup input[type="email"],
+  .newsletter-signup button {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .nav {
+    padding: var(--space-sm);
+  }
+  
+  .post-entry {
+    padding: var(--space-sm);
+  }
+  
+  /* Mobile touch targets - minimum 44px */
+  button,
+  .button,
+  .nav a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* ============================================================
+   # RESPONSIVE DESIGN - SMALL MOBILE
+   ============================================================ */
+@media screen and (max-width: 480px) {
+  :root {
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+  }
+  
+  h1 { font-size: 1.75rem; }
+  
+  .post-tags a {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+  }
+}
+
+/* ============================================================
+   # UTILITY CLASSES
+   ============================================================ */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+
+/* ============================================================
+   # PRINT STYLES
+   ============================================================ */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  .nav,
+  .footer,
+  .newsletter-signup,
+  #google_translate_element {
+    display: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+/* ============================================================
+   # DARK MODE (Optional - for future implementation)
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  /* Uncomment when ready to implement dark mode */
+  /*
+  :root {
+    --background: #1A1A1A;
+    --surface: #2D2D2D;
+    --text-primary: #E0E0E0;
+    --text-secondary: #B0B0B0;
+    --border: #404040;
+  }
+  */
 }
